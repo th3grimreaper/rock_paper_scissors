@@ -1,5 +1,5 @@
 //store the list of choices for computer in an array
-let choices = ['rock', 'paper', 'scissor'];
+const choices = ['rock', 'paper', 'scissor'];
 
 //create a function to return a random choice from the list of items by the computer
 function getComputerChoice(arr) {
@@ -78,4 +78,5 @@ function playFiveRounds() {
               Computer = ${computerScore}`);
 }
 
+//call playFiveRounds function
 playFiveRounds();
