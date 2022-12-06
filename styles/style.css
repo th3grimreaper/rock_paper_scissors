@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: 2px solid green; */
 }
 
 :root {
@@ -20,7 +19,7 @@ body {
 
 .container {
   width: clamp(250px, 60%, 600px);
-  margin: 3em auto;
+  margin: 2em auto;
 }
 
 header.container {
@@ -45,11 +44,11 @@ h1 {
 }
 
 .declare-winner {
-  margin-top: 0.5em;
+  margin-top: 2em;
 }
 
 .play {
-  margin-top: 0.5em;
+  margin-top: 2em;
 }
 
 .play-btn {

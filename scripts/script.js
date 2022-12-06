@@ -17,26 +17,26 @@ function playOneRound(playerSelection, computerSelection) {
     result = "Draw!"
   } else if(playerSelection==='rock') {
     if(computerSelection==='scissor') {
-      result = "Rock wins. One point for user.";
+      result = "Rock wins over Scissor.";
       userScore +=1;
     } else {
-      result = "Paper wins. One point for computer.";
+      result = "Paper wins over Rock.";
       computerScore +=1;
     }
   } else if(playerSelection==='paper') {
     if(computerSelection==='rock') {
-      result = "Paper wins. One point for user.";
+      result = "Paper wins over Rock.";
       userScore +=1;
     } else {
-      result = "Scissor wins. One point for computer.";
+      result = "Scissor wins over Paper.";
       computerScore +=1;
     } 
   } else if(playerSelection==='scissor') {
     if(computerSelection==='paper') {
-      result = "Scissor wins. One point for user.";
+      result = "Scissor wins over Paper.";
       userScore +=1;
     } else {
-      result = "Rock wins. One point for computer.";
+      result = "Rock wins over Scissor.";
       computerScore +=1;
     }
   }
@@ -76,12 +76,13 @@ function checkRPS(event) {
       window.location.reload();
     })
     showChoice.textContent = "Game Over";
-    gameResult.textContent = `User ${userScore}:${computerScore} Computer`;
+    gameResult.textContent = `User ${userScore}:${computerScore} Comp`;
   } else {
     const userChoice = event.target.textContent.toLowerCase();
     const computerChoice = getComputerChoice(choices);
     showChoice.textContent = playOneRound(userChoice, computerChoice);
     roundDiv.textContent = `ROUND ${round}`;
+    gameResult.textContent = `User ${userScore}:${computerScore} Comp`;
   }
 }
 
