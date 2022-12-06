@@ -77,17 +77,19 @@ function checkRPS(event) {
   roundDiv.textContent = `ROUND ${round}`;
   gameResult.textContent = `User ${userScore}:${computerScore} Comp`;
   if (userScore === 5 || computerScore === 5) {
-    buttons.forEach(btn => {
-      btn.removeEventListener('click', checkRPS);
-    });
     let btnArr = [...buttons];
     btnArr.forEach((btn) => {
       btn.style.display = "none"
     })
     playButton.style.display = "block";
-    playButton.textContent = "Reload"
+    playButton.textContent = "Replay"
     playButton.addEventListener('click', ()=>{
-      window.location.reload();
+      round = 0;
+      userScore = 0;
+      computerScore = 0;
+      roundDiv.textContent = `ROUND ${round}`;
+      showChoice.textContent = "Make a choice";
+      gameResult.textContent = "";
     })
     announceWinner();
     gameResult.textContent = `User ${userScore}:${computerScore} Comp`;
