@@ -60,6 +60,16 @@ playButton.addEventListener('click', () => {
   gameResult.textContent = "";
 })
 
+function announceWinner() {
+  if (userScore === computerScore) {
+    showChoice.textContent = "Draw!";
+  } else if (userScore > computerScore) {
+    showChoice.textContent = "User wins!";
+  } else {
+    showChoice.textContent = "Computer wins!";
+  }
+}
+
 function checkRPS(event) {
   if (userScore === 5 || computerScore ===5) {
     buttons.forEach(btn => {
@@ -75,7 +85,8 @@ function checkRPS(event) {
     playButton.addEventListener('click', ()=>{
       window.location.reload();
     })
-    showChoice.textContent = "Game Over";
+    announceWinner();
+    // showChoice.textContent = "Game Over";
     gameResult.textContent = `User ${userScore}:${computerScore} Comp`;
   } else {
     const userChoice = event.target.textContent.toLowerCase();
