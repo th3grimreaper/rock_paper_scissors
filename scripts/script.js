@@ -70,7 +70,6 @@ function announceWinner() {
   }
 }
 
-let checkUserScore, checkCompScore;
 function checkRPS(event) {
   const userChoice = event.target.textContent.toLowerCase();
   const computerChoice = getComputerChoice(choices);
