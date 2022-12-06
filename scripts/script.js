@@ -80,7 +80,6 @@ function checkRPS(event) {
       btn.style.display = "none"
     })
     playButton.style.display = "block";
-    playButton.style.margin = "0 auto";
     playButton.textContent = "Reload"
     playButton.addEventListener('click', ()=>{
       window.location.reload();
