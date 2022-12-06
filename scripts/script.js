@@ -71,7 +71,7 @@ function announceWinner() {
 }
 
 function checkRPS(event) {
-  if (userScore === 5 || computerScore ===5) {
+  if (userScore === 5 || computerScore === 5) {
     buttons.forEach(btn => {
       btn.removeEventListener('click', checkRPS);
     });
