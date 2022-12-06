@@ -86,7 +86,6 @@ function checkRPS(event) {
       window.location.reload();
     })
     announceWinner();
-    // showChoice.textContent = "Game Over";
     gameResult.textContent = `User ${userScore}:${computerScore} Comp`;
   } else {
     const userChoice = event.target.textContent.toLowerCase();
