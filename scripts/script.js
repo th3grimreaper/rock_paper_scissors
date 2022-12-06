@@ -82,7 +82,7 @@ function checkRPS(event) {
       btn.style.display = "none"
     })
     playButton.style.display = "block";
-    playButton.textContent = "Replay"
+    playButton.textContent = "Restart"
     playButton.addEventListener('click', ()=>{
       round = 0;
       userScore = 0;
