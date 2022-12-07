@@ -35,7 +35,7 @@ h1 {
 .text-group {
   background-color: var(--atom-grey);
   border: 4px solid grey;
-  height: 50vh;
+  height: 40vh;
   border-radius: 10px;
   margin-bottom: 0.5em;
   text-align: center;
@@ -89,5 +89,10 @@ h1 {
   .btn-group {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .text-group {
+    height: 60vh;
+    font-size: 3em;
   }
 }
