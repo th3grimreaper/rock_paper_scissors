@@ -3,9 +3,9 @@
 }
 
 :root {
-  --white: #FFF;
+  --white: #fff;
   --pureblack: #000000;
-  --atom-grey: #1F2329;
+  --atom-grey: #1f2329;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 header.container {
-  margin: 3em auto 0; 
+  margin: 3em auto 0;
 }
 
 h1 {
@@ -70,6 +70,7 @@ h1 {
   display: none;
   color: var(--white);
   font-size: 2em;
+  border-style: none;
   background: var(--pureblack);
   text-transform: uppercase;
   letter-spacing: 1.1px;
